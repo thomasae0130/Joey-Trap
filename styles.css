@@ -1,0 +1,394 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+html, body  {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    background-image: url('/resources/joey trap red fit.jpg');
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    image-rendering: -webkit-optimize-contrast;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-X: hidden;
+}
+
+nav {
+    border-radius: 40px;
+    overflow: hidden;
+    bottom: 10px;
+    width: 90vw;
+    height: 100vh;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    filter: brightness(.95);
+}
+
+a:active, a:hover {
+outline: 0;
+}
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0, 0 ,0 , 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 10px;
+}
+a:hover {
+    border: 1px solid  rgba(0, 0 ,0 , .25);
+    border-radius: 10px;
+    background-color: rgba(0, 0 ,0 , .7);
+    color: white;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+    text-decoration: none;
+}
+
+.navholder {
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    padding: 12px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(0,0,0, 0.6);
+    opacity: .8;
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(100px);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+
+
+.spotify {
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(0,0,0, 0.6);
+    opacity: .8;
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.applemusic {
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(0,0,0, 0.6);
+    opacity: .8;
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.soundcloud {
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(0,0,0, 0.6);
+    opacity: .8;
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.youtube {
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(0,0,0, 0.6);
+    opacity: .8;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(100px);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.lastFm {
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(0,0,0, 0.6);
+    opacity: .8;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(100px);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.instagram {
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(0,0,0, 0.6);
+    opacity: .8;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(100px);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.facebook {
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(0,0,0, 0.6);
+    opacity: .8;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(100px);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+main {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 2100px;
+}
+
+section {
+    width: 90%;
+    margin: 20px 0;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(8.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-image {
+    max-width: 200px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(8.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+.hero-text {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.play-button, .merch-link, form button  {
+    background-color: #ff4b5c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.play-button:hover, .merch-link:hover, form button:hover {
+    background-color: #ff1b2e;
+}
+
+.discography .albums {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.album {
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+}
+
+.album img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(8.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+
+}
+
+.album-info {
+    margin-top: 10px;
+
+}
+
+.videos .video-grid,  .fan-gallery .gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.video,  .gallery-item {
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(8.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.video iframe {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.social-media .social-icons {
+    display: flex;
+    justify-content: space-around;
+    font-size: 2em;
+}
+.cardHolder {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(8.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    text-align: center;
+    height: 280px;
+    width: 75px;
+    margin: 15px;
+}
+
+.hero-content:hover {
+    width: 18%
+}
+
+
+
+.hero-text h1 {
+    font-size: 12px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    width: 300px;
+
+}
+.hero h2 {
+    width: 100%;
+}
+.itemhHolder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 95%;
+    overflow-X: scroll;
+    scrollbar-width: 60%;
+    scrollbar-color: rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0.1);
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+
+}
+
+.item {
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(8.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.Merch {
+    height: 100%;
+}
